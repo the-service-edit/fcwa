@@ -22,10 +22,10 @@ so the focal point should sit near the centre.
 | `images/services/06-custom-carpentry.jpg` | Service card 06 | 800 x 1000 | Portrait (4:5) |
 | `images/services/07-new-builds-renovations.jpg` | Service card 07 | 800 x 1000 | Portrait (4:5) |
 | `images/services/08-builder-subcontract.jpg` | Service card 08 | 800 x 1000 | Portrait (4:5) |
-| `images/projects/project-01-after.jpg` | Project 01 AFTER (wide) | 1600 x 800 | Landscape |
-| `images/projects/project-02-after.jpg` | Project 02 AFTER | 1000 x 800 | Landscape |
-| `images/projects/project-03-after.jpg` | Project 03 AFTER | 1000 x 800 | Landscape |
-| `images/projects/project-04-after.jpg` | Project 04 AFTER (wide) | 1600 x 800 | Landscape |
+| `images/projects/project-01-after.jpg` | Project 01 AFTER | 1200 x 1200 | Square |
+| `images/projects/project-02-after.jpg` | Project 02 AFTER | 1200 x 1200 | Square |
+| `images/projects/project-03-after.jpg` | Project 03 AFTER | 1200 x 1200 | Square |
+| `images/projects/project-04-after.jpg` | Project 04 AFTER | 1200 x 1200 | Square |
 
 ## Before / after (the strongest proof you have)
 

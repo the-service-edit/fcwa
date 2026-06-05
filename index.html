@@ -152,15 +152,14 @@
   .svc-head .right{text-align:right;max-width:320px}
   .svc-head .right p{font-size:13px;color:var(--grey);margin-top:16px;line-height:1.55}
 
-  /* services: text-only hairline grid */
-  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-top:none}
-  .cat{position:relative;background:var(--black);padding:30px 28px 36px;display:flex;flex-direction:column;min-height:210px;transition:background .4s var(--ease)}
+  /* services: two-column numbered index */
+  .cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-top:none}
+  .cat{position:relative;background:var(--black);display:flex;align-items:baseline;gap:18px;padding:24px 30px;transition:background .4s var(--ease)}
   .cat::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--white);transition:width .5s var(--ease)}
   .cat:hover{background:#15120e}
   .cat:hover::before{width:100%}
-  .cat .num{font-size:11px;font-weight:500;letter-spacing:.16em;color:var(--grey)}
-  .cat .lbl{font-size:17px;font-weight:500;color:var(--white);letter-spacing:-.01em;margin:18px 0 12px}
-  .cat .desc{font-size:13px;line-height:1.6;color:var(--grey)}
+  .cat .num{font-size:11px;font-weight:500;letter-spacing:.16em;color:var(--grey);flex:none}
+  .cat .lbl{font-size:18px;font-weight:500;color:var(--white);letter-spacing:-.01em}
 
   /* projects */
   .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-top:none}
@@ -369,14 +368,16 @@
       </div>
     </div>
     <div class="cat-grid stagger reveal">
-      <article class="cat"><span class="num">/ 01</span><span class="lbl">Second Fix &amp; Finishing</span><span class="desc">Internal doors, skirtings and architraves, cut and hung to a crisp, considered finish.</span></article>
-      <article class="cat"><span class="num">/ 02</span><span class="lbl">Wall Panelling</span><span class="desc">Shadow-line, VJ and bespoke panelling, set out so the proportions read right.</span></article>
-      <article class="cat"><span class="num">/ 03</span><span class="lbl">Timber Battens &amp; Feature Walls</span><span class="desc">Feature timber to walls and ceilings, evenly spaced and true to the millimetre.</span></article>
-      <article class="cat"><span class="num">/ 04</span><span class="lbl">Decking</span><span class="desc">Hardwood and composite decks, hidden fixings, a flush finish built to last.</span></article>
-      <article class="cat"><span class="num">/ 05</span><span class="lbl">Timber Cladding</span><span class="desc">Precise reveals and clean corners to facades and interiors.</span></article>
-      <article class="cat"><span class="num">/ 06</span><span class="lbl">Custom Carpentry</span><span class="desc">Bespoke timber work, drawn by your designer and resolved on site.</span></article>
-      <article class="cat"><span class="num">/ 07</span><span class="lbl">New Builds &amp; Renovations</span><span class="desc">Carpentry across the whole build, from frame-out to the final finish.</span></article>
-      <article class="cat"><span class="num">/ 08</span><span class="lbl">Builder Subcontract</span><span class="desc">Reliable trades that keep your program clean and on time.</span></article>
+      <article class="cat"><span class="num">/ 01</span><span class="lbl">Second Fix Carpentry</span></article>
+      <article class="cat"><span class="num">/ 02</span><span class="lbl">Internal Doors</span></article>
+      <article class="cat"><span class="num">/ 03</span><span class="lbl">Skirting &amp; Architraves</span></article>
+      <article class="cat"><span class="num">/ 04</span><span class="lbl">Wall Panelling</span></article>
+      <article class="cat"><span class="num">/ 05</span><span class="lbl">Timber Battens</span></article>
+      <article class="cat"><span class="num">/ 06</span><span class="lbl">Decking</span></article>
+      <article class="cat"><span class="num">/ 07</span><span class="lbl">Cladding</span></article>
+      <article class="cat"><span class="num">/ 08</span><span class="lbl">Custom Timber Features</span></article>
+      <article class="cat"><span class="num">/ 09</span><span class="lbl">Renovations</span></article>
+      <article class="cat"><span class="num">/ 10</span><span class="lbl">Residential Carpentry</span></article>
     </div>
   </section>
 </div>

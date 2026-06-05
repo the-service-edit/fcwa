@@ -22,24 +22,35 @@ so the focal point should sit near the centre.
 | `images/services/06-custom-carpentry.jpg` | Service card 06 | 800 x 1000 | Portrait (4:5) |
 | `images/services/07-new-builds-renovations.jpg` | Service card 07 | 800 x 1000 | Portrait (4:5) |
 | `images/services/08-builder-subcontract.jpg` | Service card 08 | 800 x 1000 | Portrait (4:5) |
-| `images/projects/01-oak-wall-panelling.jpg` | Featured project 01 AFTER (wide) | 1600 x 800 | Landscape |
-| `images/projects/02-spotted-gum-cladding.jpg` | Featured project 02 AFTER | 1000 x 800 | Landscape |
-| `images/projects/03-hardwood-pool-deck.jpg` | Featured project 03 AFTER | 1000 x 800 | Landscape |
-| `images/projects/04-skirtings-architraves.jpg` | Featured project 04 AFTER (wide) | 1600 x 800 | Landscape |
+| `images/projects/project-01-after.jpg` | Project 01 AFTER (wide) | 1600 x 800 | Landscape |
+| `images/projects/project-02-after.jpg` | Project 02 AFTER | 1000 x 800 | Landscape |
+| `images/projects/project-03-after.jpg` | Project 03 AFTER | 1000 x 800 | Landscape |
+| `images/projects/project-04-after.jpg` | Project 04 AFTER (wide) | 1600 x 800 | Landscape |
 
 ## Before / after (the strongest proof you have)
 
 Each featured project can show a BEFORE photo on hover (and on tap, on phones).
-Add a matching file with `-before` on the end of the name and it switches on
-automatically. Leave it out and the project just shows the finished shot, no empty
+Each project uses a matched pair: `<name>-after.jpg` and `<name>-before.jpg`.
+Add the `-before` file and the reveal switches on automatically. Leave it out and the project just shows the finished shot, no empty
 toggle appears.
 
 | File | Used for |
 |------|----------|
-| `images/projects/01-oak-wall-panelling-before.jpg` | Project 01 BEFORE |
-| `images/projects/02-spotted-gum-cladding-before.jpg` | Project 02 BEFORE |
-| `images/projects/03-hardwood-pool-deck-before.jpg` | Project 03 BEFORE |
-| `images/projects/04-skirtings-architraves-before.jpg` | Project 04 BEFORE |
+| `images/projects/project-01-before.jpg` | Project 01 BEFORE |
+| `images/projects/project-02-before.jpg` | Project 02 BEFORE |
+| `images/projects/project-03-before.jpg` | Project 03 BEFORE |
+| `images/projects/project-04-before.jpg` | Project 04 BEFORE |
+
+
+### What each project slot is, right now
+
+The image filenames are deliberately generic so you can rename projects without ever
+renaming photos. The current titles are:
+
+- project-01 = Decking & Cladding, Mosman Park
+- project-02 = Spotted Gum Deck
+- project-03 = Timber Framing & Curved Staircase, Maylands
+- project-04 = Cedar-lined Eaves
 
 ### Shoot brief for FCWA (the habit that makes this work)
 

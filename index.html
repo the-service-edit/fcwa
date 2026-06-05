@@ -152,15 +152,15 @@
   .svc-head .right{text-align:right;max-width:320px}
   .svc-head .right p{font-size:13px;color:var(--grey);margin-top:16px;line-height:1.55}
 
-  /* services: white hairline grid */
+  /* services: text-only hairline grid */
   .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-top:none}
-  .cat{position:relative;overflow:hidden;aspect-ratio:4/5;cursor:pointer;background:#1a1611}
-  .cat:hover .img{transform:scale(1.05)}
-  .cat .veil{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(12,12,12,.3) 0%,transparent 30%,transparent 60%,rgba(12,12,12,.6) 100%)}
-  .cat .lbl{position:absolute;top:16px;left:18px;z-index:3;color:#fff;font-size:13px;font-weight:500}
-  .cat .num{position:absolute;bottom:14px;left:18px;z-index:3;color:#fff;font-size:13px;font-weight:500;letter-spacing:.14em}
-  .cat .desc{position:absolute;bottom:14px;right:16px;left:60px;z-index:3;color:rgba(255,255,255,.92);font-size:11px;line-height:1.4;text-align:right;opacity:0;transform:translateY(6px);transition:.45s var(--ease)}
-  .cat:hover .desc{opacity:1;transform:none}
+  .cat{position:relative;background:var(--black);padding:30px 28px 36px;display:flex;flex-direction:column;min-height:210px;transition:background .4s var(--ease)}
+  .cat::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--white);transition:width .5s var(--ease)}
+  .cat:hover{background:#15120e}
+  .cat:hover::before{width:100%}
+  .cat .num{font-size:11px;font-weight:500;letter-spacing:.16em;color:var(--grey)}
+  .cat .lbl{font-size:17px;font-weight:500;color:var(--white);letter-spacing:-.01em;margin:18px 0 12px}
+  .cat .desc{font-size:13px;line-height:1.6;color:var(--grey)}
 
   /* projects */
   .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-top:none}
@@ -269,6 +269,7 @@
     .tb-links{display:none}
     .hamb{display:flex}
     .work-grid{grid-template-columns:1fr}
+    .cat-grid{grid-template-columns:1fr}
     .why-grid{grid-template-columns:1fr}
     .pillar{border-right:none!important}
     .chip{flex:1 1 100%}
@@ -366,14 +367,14 @@
       </div>
     </div>
     <div class="cat-grid stagger reveal">
-      <article class="cat ph m-timber"><img class="img" src="images/services/01-second-fix-finishing.jpg" alt="Second fix and finishing carpentry by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines"></div><div class="veil"></div><span class="lbl">Second Fix &amp; Finishing</span><span class="num">/ 01</span><span class="desc">Internal doors, skirtings and architraves, cut and hung to a crisp, considered finish.</span></article>
-      <article class="cat ph m-sand"><img class="img" src="images/services/02-wall-panelling.jpg" alt="Wall panelling by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines h"></div><div class="veil"></div><span class="lbl">Wall Panelling</span><span class="num">/ 02</span><span class="desc">Shadow-line, VJ and bespoke panelling, set out so the proportions read right.</span></article>
-      <article class="cat ph m-stone"><img class="img" src="images/services/03-timber-feature-walls.jpg" alt="Timber battens and feature walls by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines"></div><div class="veil"></div><span class="lbl">Timber Battens &amp; Feature Walls</span><span class="num">/ 03</span><span class="desc">Feature timber to walls and ceilings, evenly spaced and true to the millimetre.</span></article>
-      <article class="cat ph m-taupe"><img class="img" src="images/services/04-decking.jpg" alt="Timber decking by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines"></div><div class="veil"></div><span class="lbl">Decking</span><span class="num">/ 04</span><span class="desc">Hardwood and composite decks, hidden fixings, a flush finish built to last.</span></article>
-      <article class="cat ph m-sand"><img class="img" src="images/services/05-timber-cladding.jpg" alt="Timber cladding by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines"></div><div class="veil"></div><span class="lbl">Timber Cladding</span><span class="num">/ 05</span><span class="desc">Precise reveals and clean corners to facades and interiors.</span></article>
-      <article class="cat ph m-stone"><img class="img" src="images/services/06-custom-carpentry.jpg" alt="Custom carpentry by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines h"></div><div class="veil"></div><span class="lbl">Custom Carpentry</span><span class="num">/ 06</span><span class="desc">Bespoke timber work, drawn by your designer and resolved on site.</span></article>
-      <article class="cat ph m-timber"><img class="img" src="images/services/07-new-builds-renovations.jpg" alt="New build and renovation carpentry by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines"></div><div class="veil"></div><span class="lbl">New Builds &amp; Renovations</span><span class="num">/ 07</span><span class="desc">Carpentry across the whole build, from frame-out to the final finish.</span></article>
-      <article class="cat ph m-taupe"><img class="img" src="images/services/08-builder-subcontract.jpg" alt="Builder subcontract carpentry by Fixing Carpentry WA, Perth" loading="lazy"><div class="lines"></div><div class="veil"></div><span class="lbl">Builder Subcontract</span><span class="num">/ 08</span><span class="desc">Reliable trades that keep your program clean and on time.</span></article>
+      <article class="cat"><span class="num">/ 01</span><span class="lbl">Second Fix &amp; Finishing</span><span class="desc">Internal doors, skirtings and architraves, cut and hung to a crisp, considered finish.</span></article>
+      <article class="cat"><span class="num">/ 02</span><span class="lbl">Wall Panelling</span><span class="desc">Shadow-line, VJ and bespoke panelling, set out so the proportions read right.</span></article>
+      <article class="cat"><span class="num">/ 03</span><span class="lbl">Timber Battens &amp; Feature Walls</span><span class="desc">Feature timber to walls and ceilings, evenly spaced and true to the millimetre.</span></article>
+      <article class="cat"><span class="num">/ 04</span><span class="lbl">Decking</span><span class="desc">Hardwood and composite decks, hidden fixings, a flush finish built to last.</span></article>
+      <article class="cat"><span class="num">/ 05</span><span class="lbl">Timber Cladding</span><span class="desc">Precise reveals and clean corners to facades and interiors.</span></article>
+      <article class="cat"><span class="num">/ 06</span><span class="lbl">Custom Carpentry</span><span class="desc">Bespoke timber work, drawn by your designer and resolved on site.</span></article>
+      <article class="cat"><span class="num">/ 07</span><span class="lbl">New Builds &amp; Renovations</span><span class="desc">Carpentry across the whole build, from frame-out to the final finish.</span></article>
+      <article class="cat"><span class="num">/ 08</span><span class="lbl">Builder Subcontract</span><span class="desc">Reliable trades that keep your program clean and on time.</span></article>
     </div>
   </section>
 </div>
